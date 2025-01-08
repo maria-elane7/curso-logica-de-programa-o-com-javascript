@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-016</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+    
+    <h2>Anos bissextos</h2>
+
+
+
+
+    <script>
+      let anoBissexto = 1004;
+
+      while(anoBissexto <= 2024){
+
+        if(!(anoBissexto % 100 === 0) || (anoBissexto % 400 === 0)){
+            document.write(anoBissexto + '<br>');
+        }else{
+            document.write(anoBissexto + '  Não é bissexto' + '<br>');
+        }
+
+        document.write('<br>'+'<hr>');
+
+        anoBissexto += 4;
+
+      }
+
+
+    </script>
+
+
+
+
+</body>
+</html>

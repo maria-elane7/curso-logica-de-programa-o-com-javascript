@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d-03</title>
+</head>
+<body>
+    <h1>Lógica de programação com javascript</h1>
+
+    <button onclick="soma(altura, largura)" id="area">Mostrar Area</button>
+
+
+    <script>
+        var area = document.querySelector('#area');
+
+        var altura = prompt('Digite um número');
+        altura = parseFloat(altura);
+
+        var largura = prompt('Digite um número');
+        largura = parseFloat(largura);
+
+
+        function soma(h,w){
+            alert('altura: ' + h);
+            alert('largura: ' + w);
+
+            var soma = h * w;
+
+            alert('Area total: ' + soma);
+        }
+
+        
+
+
+    </script>
+</body>
+</html>

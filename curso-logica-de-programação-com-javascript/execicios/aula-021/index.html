@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula-021</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javascript</h1>
+
+    <div class="tela"></div>
+
+    <script>
+        const tela = document.querySelector('.tela');
+
+        var produtos = [
+            {'nome':'Caneta','preco':2.00},
+            {'nome':'Lapis','preco':1.50},
+            {'nome':'Borracha','preco':0.50}
+
+        ]
+
+        produtosMensagem = "";
+        for(var i = 0; i < produtos.length;i++){
+            produtosMensagem += "<h2>Produtos:" + produtos[i].nome + "</h2>"
+            produtosMensagem += "<h3>Peço: "+ produtos[i].preco + "</h3>"
+        }
+
+        tela.innerHTML = produtosMensagem;
+    </script>
+    
+</body>
+</html>

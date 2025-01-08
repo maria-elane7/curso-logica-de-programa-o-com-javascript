@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d-04</title>
+</head>
+<body>
+    <h1>Lógica de programação com javascripit</h1>
+
+    <button id="botao" onclick="calcular('+')">+</button>
+    <button id="botao" onclick="calcular('-')">-</button>
+    <button id="botao" onclick="calcular('*')">*</button>
+    <button id="botao" onclick="calcular('/')">/</button>
+
+    <div class="tela"></div>
+
+
+
+
+    <script>
+        var botao = document.querySelectorAll('#botao');
+        var tela = document.querySelector('.tela');
+
+
+        var n = parseFloat(prompt('Digite um número'));
+
+        escreverNaTela();
+
+        function escreverNaTela(){
+            tela.innerHTML = n;
+        }
+
+        function calcular(somar){
+            var numero = parseFloat(prompt('Digite outro número'));
+
+            switch (somar) {
+                case '+':
+                    n += numero;
+                    break;
+                    case '-':
+                        n -= numero;
+                        break;
+                        case '*':
+                            n *= numero;
+                            break;
+                            case '/':
+                            n /= numero;
+            
+                default:
+                    break;
+            }
+
+            escreverNaTela()
+
+        }
+
+
+
+
+    </script>
+
+</body>
+</html>

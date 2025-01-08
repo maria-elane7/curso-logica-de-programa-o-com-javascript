@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d-02</title>
+    <style>
+        button{
+            width:50px;
+            height:50px;
+            font-size:1.5em;
+            margin:5px;
+            background-color:cornflowerblue;
+            color:white;
+            border:3px solid rgba(0, 139, 139, 0.493);
+        }
+    </style>
+</head>
+<body>
+    <h1>Lógica de programação com javascript</h1>
+
+    <button onclick="soma()" id="soma">+</button>
+    <button onclick="subtracao()" id="subtracao">-</button>
+    <button onclick="multiplicacao()" id="multplicacao">*</button>
+    <button onclick="divisao()" id="divisao">/</button>
+    <div id="tela"></div>
+
+
+
+    <script>
+        var somar = document.querySelector('#soma');
+        var subitrair = document.querySelector('#subtracao');
+        var multiplicar = document.querySelector('#multiplicacao');
+        var dividir = document.querySelector('#divisao');
+        var tela = document.querySelector('#tela');
+
+
+        var resultado = prompt('Digite um número');
+        resultado = parseFloat(resultado);
+
+
+        escreverNaTela();
+
+
+        function escreverNaTela(){
+            tela.innerHTML = resultado;
+        }
+
+
+        function soma(){
+            var n = parseFloat(prompt('Digite outro número'));
+
+            resultado += n;
+
+            escreverNaTela()
+        }
+
+        function subtracao(){
+         n = parseFloat(prompt('Digite outro número'));
+
+            resultado -= n;
+
+            escreverNaTela()
+        }
+
+        function multiplicacao(){
+            n = parseFloat(prompt('Digite outro número'));
+
+            resultado *= n;
+
+            escreverNaTela()
+        }
+
+        function divisao(){
+            n = parseFloat(prompt('Digite outro número'));
+
+            resultado /= n;
+
+            escreverNaTela()
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 08</title>
+</head>
+<body>
+    <h1>Lógica de programação com javasript</h1>
+
+    <div class="tela"></div>
+
+    <script>
+        var tela = document.querySelector('.tela');
+
+        var arr = new Array(25,30,45,28,0,12,78,64);
+
+        var somaTotalDosPares = somarPares(arr);
+
+        tela.innerHTML = `<strong>A soma total dos pares é : ${somaTotalDosPares}`;
+
+
+
+        function somarPares(){
+            var soma = 0;
+            for(var indice = 0; indice < arr.length; indice++){
+                if(arr[indice] % 2 === 0){
+                    soma += arr[indice];
+                }
+            }
+
+            return soma;
+        }
+    </script>
+    
+</body>
+</html>

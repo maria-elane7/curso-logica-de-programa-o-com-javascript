@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 06</title>
+</head>
+<body>
+    <h1>Lógica de programação com Javasript</h1>
+
+    <div class="tela"></div>
+
+    <script>
+        const tela = document.querySelector('.tela');
+
+        var produtos = new Array('Notebook', 'Mouse', 'HedSet', 'MousePad');
+
+        produtos.push('Caderno','Caneta');
+
+        var mensagem = '';
+
+        for(var indice = 0; indice < produtos.length; indice++){
+
+            mensagem += 'Produtos ' +  (indice + 1)  + ' : ' + produtos[indice] + '<br>';
+        }
+
+        tela.innerHTML = mensagem;
+
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio -09</title>
+</head>
+<body>
+    <h1>Lógica de programação com JavaScript</h1>
+
+        <div class="tela"></div>
+
+        <script>
+            const tela = document.querySelector('.tela');
+
+            var caneta = new Object()
+            caneta.nome = "caneta";
+            caneta.preco = 2;
+            caneta.estoque = 50;
+
+            var produtoCaneta = "";
+
+            produtoCaneta += "Nome: "+ caneta.nome + "<br>";
+            produtoCaneta += "Preço: "+ caneta.preco + "<br>";
+            produtoCaneta += "Estoque: "+ caneta.estoque + "<br>"
+
+            tela.innerHTML = produtoCaneta;
+
+         caneta.comprar = function(){
+            console.log("Comprou uma caneta");
+            this.estoque--;
+            console.log(this.estoque);
+         }
+            
+           
+        </script>
+</body>
+</html>
